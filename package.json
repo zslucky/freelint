@@ -1,6 +1,6 @@
 {
   "name": "freelint",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "a lint tool based on standard-engine.",
   "main": "index.js",
   "repository": {
@@ -18,12 +18,12 @@
   "homepage": "https://github.com/zslucky/freelint",
   "dependencies": {
     "eslint": "^2.12.0",
-    "eslint-config-freelint": "^1.0.2",
-    "standard-engine": "^4.0.4",
     "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-freelint": "^1.1.0",
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.4.2",
-    "eslint-plugin-react": "^5.1.1"
+    "eslint-plugin-react": "^5.1.1",
+    "standard-engine": "^4.0.4"
   }
 }
