@@ -19,3 +19,39 @@ freelint
 ```
 
 That's all.
+
+
+### How do I make the output all colorful and *pretty*?
+
+The built-in output is simple and straightforward, but if you like shiny things,
+install [snazzy](https://www.npmjs.com/package/snazzy):
+
+```
+npm install snazzy
+```
+
+And run:
+
+```bash
+$ freelint --verbose | snazzy
+```
+
+### How do I ignore files?
+
+The paths `node_modules/**`, `*.min.js`, `bundle.js`, `coverage/**`, hidden files/folders
+(beginning with `.`), and all patterns in a project's root `.gitignore` file are
+automatically ignored.
+
+Sometimes you need to ignore additional folders or specific minified files. To do that, add
+a `standard.ignore` property to `package.json`:
+
+```json
+"freelint": {
+  "ignore": [
+    "**/out/",
+    "/lib/select2/",
+    "/lib/ckeditor/",
+    "tmp.js"
+  ]
+}
+```
