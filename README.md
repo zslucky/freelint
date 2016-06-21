@@ -48,7 +48,7 @@ The paths `node_modules/**`, `*.min.js`, `bundle.js`, `coverage/**`, hidden file
 automatically ignored.
 
 Sometimes you need to ignore additional folders or specific minified files. To do that, add
-a `standard.ignore` property to `package.json`:
+a `freelint.ignore` property to `package.json`:
 
 ```json
 "freelint": {
