@@ -22,13 +22,7 @@ freelint
 
 That's all.
 
-#### If you are using babel features. please add the `babel-eslint` plugin and add it in `package.json`.
-```javascript
-"freelint": {
-  "parser": "babel-eslint"
-}
-```
-
+`babel-eslint` has supported in extends config package `eslint-config-freelint`.
 
 
 ## Know Issues
