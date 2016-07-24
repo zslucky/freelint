@@ -4,9 +4,11 @@
 
 a lint tool based on standard-engine.
 
-Version 1.0+ is refer to standardjs. (Deprecated)
+Version 1.0+ is deprecated.
 
 Version 2.0+ is refer to airbnb/javascript.
+
+We are followed [SamVer 2.0](http://semver.org/), this started from version 2.0.0, then we will try our best to avoide the dependency hell.
 
 ### Install
 ```bash
@@ -19,6 +21,14 @@ freelint
 ```
 
 That's all.
+
+#### If you are using babel features. please add the `babel-eslint` plugin and add it in `package.json`.
+```javascript
+"freelint": {
+  "parser": "babel-eslint"
+}
+```
+
 
 
 ## Know Issues
