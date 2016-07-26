@@ -1,6 +1,6 @@
 {
   "name": "freelint",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "a lint tool based on standard-engine, and config based on Airbnb",
   "main": "index.js",
   "repository": {

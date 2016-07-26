@@ -28,7 +28,7 @@ That's all.
 ## Know Issues
 1. As airbnb is using `eslint-plugin-imports`, this plugin need extra resolver for webpack if we add the reslove settings, now We added `eslint-import-resolver-webpack` as a tmp solution, but this plugin should 
 add settings in `.eslintrc` to tell this resolver where it can find the webpack config.
-So If we need add reslove settings for webpack, we should add a file named `webpack.resolve.js` to `config` dir in project's root dir. 
+So If we need add reslove settings for webpack, we should add a file named `webpack.resolve.js` to `config` dir in project's root dir. (e.g.[Demo](https://github.com/zslucky/react-redux-freetmp))
 
 ### How do I make the output all colorful and *pretty*?
 
