@@ -10,14 +10,31 @@ Version 2.0+ is refer to airbnb/javascript.
 
 We are followed [SamVer 2.0](http://semver.org/), this started from version 2.0.0, then we will try our best to avoide the dependency hell.
 
-### Install
+### Install (Global)
 ```bash
-npm install freelint --save-dev
+npm install -g freelint
 ```
 
-### Usage
+### Install (Local)
+```bash
+npm install freelint --save-dev
+
+# ...
+# Add npm task in package.json.
+"script": {
+	"freelint": "freelint",
+	...
+}
+```
+
+### Usage (Global)
 ```bash
 freelint
+```
+
+### Usage (Local)
+```bash
+npm run freelint
 ```
 
 That's all.
