@@ -2,11 +2,8 @@
 
 [![Build Status](https://travis-ci.org/zslucky/freelint.svg?branch=master)](https://travis-ci.org/zslucky/freelint)
 
-a lint tool based on standard-engine.
+a lint tool based on standard-engine and rules follow the [Airbnb javascript standard](https://github.com/airbnb/javascript).
 
-Version 1.0+ is deprecated.
-
-Version 2.0+ is refer to airbnb/javascript.
 
 We are followed [SamVer 2.0](http://semver.org/), this started from version 2.0.0, then we will try our best to avoide the dependency hell.
 
@@ -22,12 +19,13 @@ npm install freelint --save-dev
 # ...
 # Add npm task in package.json.
 "script": {
-	"freelint": "freelint",
-	...
+  "freelint": "freelint",
+  ...
 }
 ```
 
 ### Usage (Global)
+In your project's directiry.
 ```bash
 freelint
 ```
@@ -39,13 +37,8 @@ npm run freelint
 
 That's all.
 
-`babel-eslint` has supported in extends config package `eslint-config-freelint`.
-
-
 ## Know Issues
-1. As airbnb is using `eslint-plugin-imports`, this plugin need extra resolver for webpack if we add the reslove settings, now We added `eslint-import-resolver-webpack` as a tmp solution, but this plugin should 
-add settings in `.eslintrc` to tell this resolver where it can find the webpack config.
-So If we need add reslove settings for webpack, we should add a file named `webpack.resolve.js` to `config` dir in project's root dir. (e.g.[Demo](https://github.com/zslucky/react-redux-freetmp))
+1. If you are using ES6 import/export feature, and webpack like build tool with a resolve setting, you should extract the resolve settings to a new file named `webpack.resolve.js`, and place it to `config` dir in root dir, we know it's a dirty code, if you have any good solution, don't hesitated to create a pull request.(e.g.[Demo](https://github.com/zslucky/react-redux-freetmp))
 
 ### How do I make the output all colorful and *pretty*?
 
@@ -81,3 +74,10 @@ a `freelint.ignore` property to `package.json`:
   ]
 }
 ```
+
+### TODO
+
+I'm working on 3.0.0, new features bellow:
+1. Add `snazzy` as default format, then no need to do more steps.
+2. Support custom format by setting from cli.
+3. Add report function by setting from cli.
