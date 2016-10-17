@@ -11,11 +11,20 @@ We are followed [SamVer 2.0](http://semver.org/), this started from version 2.0.
 ```bash
 npm install -g freelint
 ```
+or use `yarn`
+```bash
+yarn global add freelint
+```
 
 ### Install (Local)
 ```bash
 npm install freelint --save-dev
-
+```
+or use `yarn`
+```bash
+yarn add freelint --dev
+```
+```json
 # ...
 # Add npm task in package.json.
 "script": {
@@ -33,6 +42,10 @@ freelint
 ### Usage (Local)
 ```bash
 npm run freelint
+```
+or use `yarn`
+```bash
+yarn run freelint
 ```
 
 That's all.
