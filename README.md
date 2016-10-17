@@ -42,17 +42,11 @@ That's all.
 
 ### How do I make the output all colorful and *pretty*?
 
-The built-in output is simple and straightforward, but if you like shiny things,
-install [snazzy](https://www.npmjs.com/package/snazzy):
-
-```
-npm install snazzy
-```
-
-And run:
+[snazzy](https://www.npmjs.com/package/snazzy) is the default output format now, you can also use any other
+format library, just need to add a option to disable the default format and run your command in pipe, like:
 
 ```bash
-$ freelint --verbose | snazzy
+$ freelint -r | customFormat
 ```
 
 ### How do I ignore files?
@@ -77,7 +71,4 @@ a `freelint.ignore` property to `package.json`:
 
 ### TODO
 
-I'm working on 3.0.0, new features bellow:
-1. Add `snazzy` as default format, then no need to do more steps.
-2. Support custom format by setting from cli.
-3. Add report function by setting from cli.
+- [ ] Add reporter function by setting from cli
