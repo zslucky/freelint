@@ -7,7 +7,7 @@ module.exports = {
   homepage: pkg.homepage,
   bugs: pkg.bugs.url,
   eslint: eslint, // pass any version of eslint >= 1.0.0
-  cmd: 'freelint', // should match the "bin" key in your package.json
+  cmd: 'freelint-base', // should match the "bin" key in your package.json
   tagline: pkg.description, // displayed in output --help
   eslintConfig: {
     configFile: path.join(__dirname, 'rc', 'eslintrc.json')

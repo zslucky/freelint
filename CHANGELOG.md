@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to SamVer 2.0. ([Semantic Versioning](http://semver.org/)).
 
+## 3.0.0 - 2016-10-17
+
+- Upgrade Airbnb configuration, and all dependencies.
+- Use `snazzy` as the default output format, then no need to write in pipe everytime.
 
 ## 2.0.12 - 2016-8-15
 

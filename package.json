@@ -1,6 +1,6 @@
 {
   "name": "freelint",
-  "version": "2.0.15",
+  "version": "3.0.0",
   "description": "a lint tool based on standard-engine, and configuration is based on Airbnb",
   "main": "index.js",
   "bugs": {
@@ -11,24 +11,25 @@
     "url": "https://github.com/zslucky/freelint.git"
   },
   "bin": {
-    "freelint": "./bin/cmd.js"
+    "freelint-base": "./bin/cmd.js",
+    "freelint": "./bin/freelint.js"
   },
   "author": "Lucky Zhou",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zslucky/freelint/issues"
-  },
   "homepage": "https://github.com/zslucky/freelint",
   "dependencies": {
+    "argv": "0.0.2",
     "babel-eslint": "^6.1.2",
-    "eslint": "^2.12.0",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-config-freelint": "^2.0.11",
+    "cross-spawn": "^4.0.2",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-config-freelint": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.3.0",
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-import": "^1.8.1",
-    "eslint-plugin-jsx-a11y": "^1.4.2",
-    "eslint-plugin-react": "^5.1.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "snazzy": "^5.0.0",
     "standard-engine": "^4.0.4"
   }
 }
