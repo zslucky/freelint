@@ -72,7 +72,7 @@ Sometimes you need to ignore additional folders or specific minified files. To d
 a `freelint.ignore` property to `package.json`:
 
 ```json
-"freelint": {
+"freelint-base": {
   "ignore": [
     "**/out/",
     "/lib/select2/",
