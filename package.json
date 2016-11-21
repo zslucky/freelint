@@ -1,6 +1,6 @@
 {
   "name": "freelint",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "a lint tool based on standard-engine, and configuration is based on Airbnb",
   "main": "index.js",
   "bugs": {
