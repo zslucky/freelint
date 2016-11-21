@@ -55,11 +55,11 @@ That's all.
 
 ### How do I make the output all colorful and *pretty*?
 
-[snazzy](https://www.npmjs.com/package/snazzy) is the default output format now, you can also use any other
-format library, just need to add a option to disable the default format and run your command in pipe, like:
+[snazzy](https://www.npmjs.com/package/snazzy) is the default output format for cmd `freelint` now, you can also use any other
+format library, just need to use the base cmd `freelint-base`, like:
 
 ```bash
-$ freelint -r | customFormat
+$ freelint-base | customFormat
 ```
 
 ### How do I ignore files?
